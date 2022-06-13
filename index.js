@@ -95,8 +95,9 @@ for(let i=0; i<50; i++) {
   worksheet.cell(4+i, 42, 4+i, 43, true).string('30/10/2022').style(styleII)
 }
 
-workbook.write('Excel.xlsx');
+workbook.write(`Excel${new Date()}.xlsx`);
 app.get('/', function (req, res) {
+  workbook.write(`Excel${new Date()}.xlsx`);
   res.send('Hello World')
 })
 
