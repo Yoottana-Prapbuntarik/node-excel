@@ -70,8 +70,8 @@ worksheet.cell(2, 42, 2, 43, true).string('วันเดือนปีที�
 for(let i=0; i<50; i++) {
   // begin cell 4 + i <<< i refer to new row
   // content
-  worksheet.cell(4+i, 1, 4+i, 2, true).string(`${i+1}`).style(styleII)
   worksheet.cell(4+i, 3, 4+i, 4, true).string('นาย').style(styleII)
+  worksheet.cell(4+i, 1, 4+i, 2, true).string(`${i+1}`).style(styleII)
   worksheet.cell(4+i, 5, 4+i, 6, true).string('ทดสอบ').style(styleII)
   worksheet.cell(4+i, 7, 4+i, 8, true).string('ระบบ').style(styleII)
   worksheet.cell(4+i, 9, 4+i, 10, true).string('30/11/2022').style(styleII)
